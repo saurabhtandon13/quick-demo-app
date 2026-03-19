@@ -1,0 +1,58 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: online-app-selfsigned-issuer
+  namespace: webapps
+  labels:
+    app: online-app
+spec:
+  selfSigned: {}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: online-app-selfsigned-cert
+  namespace: webapps
+  labels:
+    app: online-app
+spec:
+  isCA: true
+  commonName: shoppingapp.vkslab.internal
+  secretName: online-app-server-tls
+  dnsNames:
+    - shoppingapp.vkslab.internal
+  duration: 8760h
+  renewBefore: 240h
+  privateKey:
+    rotationPolicy: Always
+    algorithm: ECDSA
+    size: 256
+  issuerRef:
+    name: online-app-selfsigned-issuer
+    kind: Issuer
+    group: cert-manager.io
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: online-app-ingress
+  namespace: webapps
+  labels:
+    app: online-app
+spec:
+  ingressClassName: cilium
+  tls:
+    - hosts:
+        - shoppingapp.vkslab.internal
+      secretName: online-app-server-tls
+  rules:
+    - host: shoppingapp.vkslab.internal
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend 
+                port:
+                  number: 80
