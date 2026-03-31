@@ -17,10 +17,10 @@ metadata:
     app: online-app
 spec:
   isCA: true
-  commonName: shoppingapp.vkslab.internal
+  commonName: shoppingapp.lvnlab.internal
   secretName: online-app-server-tls
   dnsNames:
-    - shoppingapp.vkslab.internal
+    - shoppingapp.lvnlab.internal
   duration: 8760h
   renewBefore: 240h
   privateKey:
@@ -43,10 +43,10 @@ spec:
   ingressClassName: cilium
   tls:
     - hosts:
-        - shoppingapp.vkslab.internal
+        - shoppingapp.lvnlab.internal
       secretName: online-app-server-tls
   rules:
-    - host: shoppingapp.vkslab.internal
+    - host: shoppingapp.lvnlab.internal
       http:
         paths:
           - path: /
