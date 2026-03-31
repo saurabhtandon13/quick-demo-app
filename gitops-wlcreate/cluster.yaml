@@ -74,3 +74,20 @@ spec:
                 secretRef:
                   name: "air-wl01-user-trusted-ca-secret"
                   key: registry-cert
+---
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonInstall
+metadata:
+  name: air-wl01-cert-manager
+  namespace: air
+  annotations:
+    clusteraddon.addons.kubernetes.vmware.com/owned-for-deletion: "true"
+spec:
+  addonRef:
+    name: cert-manager
+  clusters:
+  - selector:
+      matchLabels:
+        cluster.x-k8s.io/cluster-name: air-wl01
+---
+
