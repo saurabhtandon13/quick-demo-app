@@ -90,4 +90,32 @@ spec:
       matchLabels:
         cluster.x-k8s.io/cluster-name: air-wl01
 ---
-
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonInstall
+metadata:
+  name: air-wl01-contour
+  namespace: air
+spec:
+  addonRef:
+    name: contour
+  clusters:
+  - selector:
+      matchLabels:
+        cluster.x-k8s.io/cluster-name: air-wl01
+---
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonConfig
+metadata:
+  name: air-wl01-contour       #naming convention is a key it should be <cluster-name>-<package-name>
+  namespace: air
+  annotations:
+    clusteraddon.addons.kubernetes.vmware.com/owned-for-deletion: "true"
+spec:
+  addonConfigDefinitionRef:
+    name: air-wl01-contour
+    namespace: vmware-system-vks-public
+  clusterName: air-wl01
+  values:
+    envoy:
+      service:
+        type: LoadBalancer
