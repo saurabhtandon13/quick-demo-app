@@ -1,0 +1,41 @@
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonInstall
+metadata:
+  name: carbon-wl01-prometheus
+  namespace: carbon # Your vSphere namespace
+spec:
+  addonRef:
+    name: prometheus
+  clusters:
+  - selector:
+      matchLabels:
+        cluster.x-k8s.io/cluster-name: carbon-wl01
+---
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonConfig
+metadata:
+  annotations:
+    clusteraddon.addons.kubernetes.vmware.com/owned-for-deletion: "true"
+  name: carbon-wl01-prometheus
+  namespace: carbon  # Your vSphere namespace
+spec:
+  clusterName: carbon-wl01
+  values:
+    deploycomponents: 
+      kube-state-metrics: true
+      node-exporter: true
+      pushgateway: true
+      prometheus: true
+      alertmanager: true
+      prometheus-operator: false
+    alertmanager:
+      pvc:
+        accessMode: ReadWriteOnce
+        storage: 2Gi
+        storageClassName: vks-storage-policy
+    prometheus:
+      pvc:
+        accessMode: ReadWriteOnce
+        storage: 15Gi
+        storageClassName: vks-storage-policy
+

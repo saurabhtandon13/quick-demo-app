@@ -5,15 +5,15 @@ data:
   registry-cert: TFMwdExTMUNSVWRKVGlCRFJWSlVTVVpKUTBGVVJTMHRMUzB0Q2sxSlNVZEJha05EUVN0eFowRjNTVUpCWjBsVlRXVkZRbU12UzJaVlJGVlRZMDl1YVVKRlRVaHBkVzlNVmxFd2QwUlJXVXBMYjFwSmFIWmpUa0ZSUlU0S1FsRkJkMWw2UlV4TlFXdEhRVEZWUlVKb1RVTlJNRFI0UkdwQlRVSm5UbFpDUVdkTlFsVnNkVnBIYkdoTlVUUjNSRUZaUkZaUlVVaEVRVlpLWW0xU2NBcFpWRVZSVFVFMFIwRXhWVVZEWjNkSVdsaG9hR0pZUW5OYVZFVlNUVUU0UjBFeFZVVkRkM2RKVlVkV2VXTXlPWFZaVjNkNFJIcEJUa0puVGxaQ1FVMU5Da0p0YUdoamJVcDJZMnBCWlVaM01IbE9ha0Y2VFdwWmVFMTZVVFZOYW14aFJuY3dlazVxUVhwTmFrMTRUWHBSTlUxcWJHRk5TRlY0UTNwQlNrSm5UbFlLUWtGWlZFRnJUazlOVVRSM1JFRlpSRlpSVVVsRVFWWktZbTFTY0ZsVVJVOU5RWGRIUVRGVlJVSjNkMFpUVnpWcllWZEZlRVZFUVU5Q1owNVdRa0Z2VFFwQ01sWTBXVmN4ZDJKSFZYaEZWRUZRUW1kT1ZrSkJjMDFEUmtKc1kyNU9kbUp0Um5OTlUwVjNTSGRaUkZaUlVVUkVRbWg1V2xka2NHTXpVbmxsVXpWekNtUnROWE5aVjBsMVlWYzFNRnBZU25WWlYzZDNaMmRKYVUxQk1FZERVM0ZIVTBsaU0wUlJSVUpCVVZWQlFUUkpRMFIzUVhkblowbExRVzlKUTBGUlEzSUtXV1I2TTBkRlNqQndPWFJNT1hoVVkzZGtkbFpyV0dGaVpHTm9lVEpyYjBseWRrbDZaRkE0VkVaSVRreGtXaTl1YTFKVk1VcFBNR1ZRY2t4WlVVOWFNd3BWVUd0MVdTOVlTRk5MVFVrNVRITlhUM2R1Wm1aeE5UbDBlWGhNU0d4MlRuUnNSbTFsT0Rac1oxTjZMMWw2V1c1U2VYUkVkVTlJVlRoRk16SkdTMFJHQ25oMlUwZDNWVzh4ZWs5SVRXRnZZV0ZsYUdKNFdURnpObXBJU3pGUk1tNVZiRXR1UVRkR2JYVmxNQ3RETmxKeFprTTBTMUZVTm05Q2RHRndNbk1yZDIwS1QybGxSWGh4YkhkNE9HSXdTUzlPY0U0M2VteFZSbTVHVEc4MGEzVjJWazkwS3pOeGNXTklTMjFIYlM5VlVrdzRTbFJZYjBaNlJWbEZiek5VZVhwUlVBbzRjMWxCVEdOWVNsVlZUM0kzTlcxamVHMU9OUzlhTlZKNVRpOUdaVEZWT1ZWeWNWUkRja3hxV2toT05VUnlhR2RJV25wVE1qQnBaVGRrZFhZeGMwcEtDbFpGVVZoMlUyaHNjblYxYldKWldVMXlSR1JuYUZSelQzaFlRVkpVTldVck5GZFpaV1pKVjNVd1pFWnhaRlpKUkRkdFlrMVVlVUpuTDI1MlowUklZbklLY1VONFJqRlFiVkoyYVc1cWNua3pTV1kyWTBOTE9EY3lSSFZoTkVzclNUSXdPVlZsWjJkdloyVktSRVZIUVdseGVHY3hVM0p1T0VaSU1EQllSelJzYlFwT2FFWjJhVTVWUlZSVGFsa3hOblF5V1VOVWIzcHVTbWs1YWxSRWJrYzFWbTkzY1RGYVRqUTVaR2xDYkVkcVZTOUdiRTVhUzFWVEszVXhZMnRqUmpKeUNsUjNjVUp5UTJNeFYwSTBVa05aZWtreVJGUjFiVk5GVFU5aVFXZFJkbFpuU0ZaVVEyRldaRWgxYlZrME5XcDZiSFJvYmxOeFFsZzRlVE00T0U5cldHMEtka1JwVG1GYVpUSXhVWEl6YUV4eFQzVnhkVzlsWlVSQllVWjJiMkpPUjI4d1kzTktaVEZXUjNGMFNXUkdZa1ZVVlhncmF6QnBjWEpZWVRWMVRXTldTd3BZVmpjek5qSkRNbVJ4VWprdlp6TXlVRTlSYkd0b2JrbGhaa3BCYWtKdlJGVkROR0ZaVEc1TlNuZEpSRUZSUVVKdk5FZGlUVWxIV1UxQ09FZEJNVlZrQ2tsM1VWbE5RbUZCUmtwSE5qQlRibXByVEdKVldrWldlRTVCV2k5RlJXMUhZMHBXZFUxQmEwZEJNVlZrUlhkUlEwMUJRWGREZDFsRVZsSXdVRUpCVVVRS1FXZFVkMDFDVFVkQk1WVmtTbEZSVFUxQmIwZERRM05IUVZGVlJrSjNUVUpOUTJ0SFFURlZaRVZSVVdsTlEwTkRSMGhLYkZveWJIcGtTRW8xVEcxNE1ncGliWGhvV1drMWNHSnVVbXhqYlRWb1lrbGpSWGRMYUd0RGFrRmtRbWRPVmtoUk5FVkdaMUZWU1RsUVVteHJkRkoyT1ZkaFkwNXNPVTQxY25rMVpUTmxDamxxUlhkRVVWbEtTMjlhU1doMlkwNUJVVVZPUWxGQlJHZG5TVUpCUjFOV2NETjBORkZWYUZoQkwyZHFURFpIVUVKaWNrRjVNRVptUW5ReFZIY3piR1lLVnpCaVNVbFlWbVZEZGxGeVIwcDNOMnB1VFhoUVltVTNSMFZ0V2sxbk9EWXhRakJoUjNVNWF6TjFaRFpSU1ZReWJFdENkbWx5VmpneFNpczJUVlUwTHdwVmQwTndhRmRLUTBGelN6aEtPV1ZzV1hCR1puVlJlbVJ5UTJoTVJ6Qk5OakoxUnpOYWFrTnhkSFZpU2xvMFpVdEZPRTh2YUhGNFExQlVaSGxtZWpaTENta3hkMGx1ZEZFNVRHaEZUalZMVmxoaVpHSTFSVE5UWkZoMFNVUnFVM2x4TUhsUmNERlVTVTVTVDNKcE1WVm1NVk5PWkVWV2VVdDJjWE5xWlZKYU9EQUtSVTlsWVVzNVJXNW9SSEJGTDNZeE5qVTJjU3RtUVV4VUszTkpNbFEwZEVWWU0yaFJZMnBUZDFOVGRWZE1kMlExT1ZwVk1tRTRlVkp3TjJoaGFXUkZVZ294WTFrd2JuZHdRWEJJVWpSaFpGUjVjM1ZNWjI1aGRISkRaSGwwTVhWSVlXRkRiMjl5WTBka2RrRnZRMkZpYmsxVmFscG1NWEZaVDBGWFMyWTRhVWxyQ2xObmFtRm1RWFk1WTBnME1GTk9ha1Z2YkZCcVRVdE9Tek4xT1VFMFJEWnFiRXRPWmpaMVNuUnNhVEpNYTJWclFuZHpPWE5uUW5Kd1NVOUNNVkkwWld3S1dEWkljVnB2VTNwRVZHUnVMMk55VlRaVk1HZE1aVEpvWVdOR05XbDBhRGRZVFhaaFJ6Vm1RVlZCZVhaVVQwWlFPVzVNVTJWcGNsQk1kSElyYm1kUWR3cFFOa2hxTkdOMVYwcDRSMGsxVkVwRFpYbFhWM1ZvVTBwMlRDOVhZa013U1ZCUVNrZENPVVppVFN0bGJUazRVbWh6ZFhnNWRFb3lMM0U1V1hwdFQxRk5Dak5zV0dOSlZscHJVSHAxTTBoVE1FdFBlamhDZGxOR2FESmxObE15VmpCaFkxZzFPV1JTVlUxUmJIWm5PSGRYVlZkS2VtVkxNbWt5VkdsMlZua3lOR1VLYjFCU1VqUXhhVzlZTUZscFQxRlpZVmRTZW1kQ1UxUndXbWx2YlZnelpYTTNPRWxYU1U0MmVHaGljaTlxYWpaeVdVUXdlWGN6YlVGMk1Vb3pVakJrV2dvNVNUaFhMM0pCZGdvdExTMHRMVVZPUkNCRFJWSlVTVVpKUTBGVVJTMHRMUzB0Q2c9PQ==
 kind: Secret
 metadata:
-  name: air-wl01-user-trusted-ca-secret
-  namespace: air
+  name: carbon-wl01-user-trusted-ca-secret
+  namespace: carbon
 type: Opaque
 ---
 apiVersion: cluster.x-k8s.io/v1beta2
 kind: Cluster
 metadata:
-  name: air-wl01
-  namespace: air
+  name: carbon-wl01
+  namespace: carbon
 spec:
   clusterNetwork:
     pods:
@@ -29,25 +29,40 @@ spec:
       namespace: vmware-system-vks-public
     version: v1.35.0---vmware.2-vkr.4
     controlPlane:
-      replicas: 1
+      replicas: 3
       metadata:
         annotations:
           run.tanzu.vmware.com/resolve-os-image: "os-name=ubuntu,os-version=24.04"
     workers:
       machineDeployments:
         - class: node-pool
-          name: k8s-air-np01
-          replicas: 1
+          name: k8s-carbo-np01
           metadata:
             annotations:
               run.tanzu.vmware.com/resolve-os-image: "os-name=ubuntu,os-version=24.04"
+              cluster.x-k8s.io/cluster-api-autoscaler-node-group-min-size: "2"
+              cluster.x-k8s.io/cluster-api-autoscaler-node-group-max-size: "5"
+          deletion:
+            order: Oldest
+          rollout:
+            strategy:
+              type: RollingUpdate
+              rollingUpdate:
+                maxSurge: 1
+                maxUnavailable: 1
+          variables:
+            overrides:
+            - name: vmClass
+              value: k8s-worker
     variables:
       - name: vmClass
-        value: k8s-master-demo
+        value: k8s-master
       - name: storageClass
         value: vks-storage-policy
       - name: kubernetes
         value:
+          endpointFQDNs:
+            - carbonlogin.lvnlab.internal
           etcdConfiguration:
             maximumDBSizeGiB: 5
           security:
@@ -72,14 +87,14 @@ spec:
             additionalTrustedCAs:
             - caCert:
                 secretRef:
-                  name: "air-wl01-user-trusted-ca-secret"
+                  name: "carbon-wl01-user-trusted-ca-secret"
                   key: registry-cert
 ---
 apiVersion: addons.kubernetes.vmware.com/v1alpha1
 kind: AddonInstall
 metadata:
-  name: air-wl01-cert-manager
-  namespace: air
+  name: carbon-wl01-cert-manager
+  namespace: carbon
   annotations:
     clusteraddon.addons.kubernetes.vmware.com/owned-for-deletion: "true"
 spec:
@@ -88,34 +103,178 @@ spec:
   clusters:
   - selector:
       matchLabels:
-        cluster.x-k8s.io/cluster-name: air-wl01
+        cluster.x-k8s.io/cluster-name: carbon-wl01
 ---
 apiVersion: addons.kubernetes.vmware.com/v1alpha1
 kind: AddonInstall
 metadata:
-  name: air-wl01-contour
-  namespace: air
+  name: carbon-wl01-prometheus
+  namespace: carbon # Your vSphere namespace
 spec:
   addonRef:
-    name: contour
+    name: prometheus
   clusters:
   - selector:
       matchLabels:
-        cluster.x-k8s.io/cluster-name: air-wl01
+        cluster.x-k8s.io/cluster-name: carbon-wl01
 ---
 apiVersion: addons.kubernetes.vmware.com/v1alpha1
 kind: AddonConfig
 metadata:
-  name: air-wl01-contour       #naming convention is a key it should be <cluster-name>-<package-name>
-  namespace: air
   annotations:
     clusteraddon.addons.kubernetes.vmware.com/owned-for-deletion: "true"
+  name: carbon-wl01-prometheus
+  namespace: carbon  # Your vSphere namespace
 spec:
-  addonConfigDefinitionRef:
-    name: air-wl01-contour
-    namespace: vmware-system-vks-public
-  clusterName: air-wl01
+  clusterName: carbon-wl01
   values:
-    envoy:
-      service:
-        type: LoadBalancer
+    deploycomponents:
+      kube-state-metrics: true
+      node-exporter: true
+      pushgateway: true
+      prometheus: true
+      alertmanager: true
+      prometheus-operator: false
+    alertmanager:
+      pvc:
+        accessMode: ReadWriteOnce
+        storage: 2Gi
+        storageClassName: vks-storage-policy
+    prometheus:
+      pvc:
+        accessMode: ReadWriteOnce
+        storage: 15Gi
+        storageClassName: vks-storage-policy
+---
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonInstall
+metadata:
+  name: carbon-wl01-istio
+  namespace: carbon # Your vSphere namespace
+spec:
+  addonRef:
+    name: istio
+  clusters:
+  - selector:
+      matchLabels:
+        cluster.x-k8s.io/cluster-name: carbon-wl01
+---
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonConfig
+metadata:
+  annotations:
+    clusteraddon.addons.kubernetes.vmware.com/owned-for-deletion: "true"
+  name: carbon-wl01-istio
+  namespace: carbon  # Your vSphere namespace
+spec:
+  clusterName: carbon-wl01
+  values:
+    istio:
+      namespace: "istio-system"
+      ambientMode:
+        enabled: true
+        ztunnel:
+          resources:
+            requests:
+              cpu: 200m
+              memory: 512Mi
+      istioCNI:
+        enabled: true
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+      enableStrictMTLS: false
+      gateways:
+        egress:
+          enabled: true
+          namespace: "istio-egress"
+          priorityClassName: ""
+          replicas: 1
+          resources:
+            limits:
+              cpu: 2000m
+              memory: 1024Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
+          autoscaling:
+            enabled: true
+            minReplicas: 1
+            maxReplicas: 5
+        ingress:
+          enabled: true
+          namespace: "istio-ingress"
+          priorityClassName: ""
+          replicas: 1
+          resources:
+            limits:
+              cpu: 2000m
+              memory: 1024Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
+          autoscaling:
+            enabled: true
+            minReplicas: 1
+            maxReplicas: 5
+      pilot:
+        priorityClassName: ""
+        replicas: 1
+        resources:
+          requests:
+            cpu: 500m
+            memory: 2048Mi
+        autoscaling:
+          enabled: true
+          minReplicas: 1
+          maxReplicas: 5
+      support:
+        priorityClassName: ""
+        resources:
+          requests:
+            cpu: 100m
+            memory: 64Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
+      meshConfig:
+        connectTimeout: "10s"
+        ingressControllerMode: "STRICT"
+        accessLogFile: ""
+        trustDomain: "cluster.local"
+        trustDomainAliases: []
+        enablePrometheusMerge: true
+        meshID: "carbon-wl01"
+        meshMTLS:
+          minProtocolVersion: "TLSV1_2"
+        enableDNSProxy: false
+        proxy:
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 2000m
+              memory: 1024Mi
+        waypoint:
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: "2"
+              memory: 1Gi
+        enableTracing: true
+        extensionProviders:
+          - name: jaeger
+            opentelemetry:
+              port: 4317
+              service: jaeger-collector.istio-system.svc.cluster.local
+          - name: zipkin
+            zipkin:
+              port: 4317
+              service: jaeger-collector.istio-system.svc.cluster.local
+        defaultProviders:
+          tracing:
+            - jaeger

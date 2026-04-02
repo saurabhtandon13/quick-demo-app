@@ -1,0 +1,91 @@
+{
+    "kind": "AddonRelease",
+    "apiVersion": "addons.kubernetes.vmware.com/v1alpha1",
+    "metadata": {
+        "name": "istio.kubernetes.vmware.com.1.28.2-vmware.1-vks.1",
+        "namespace": "vmware-system-vks-public",
+        "uid": "6c62062c-5e51-4aec-9f1e-2b1bbb061200",
+        "resourceVersion": "32236",
+        "generation": 1,
+        "creationTimestamp": "2026-03-26T23:27:32Z",
+        "labels": {
+            "addon.kubernetes.vmware.com/addon-name": "istio",
+            "addon.kubernetes.vmware.com/addon-namespace": "vmware-system-vks-public"
+        },
+        "annotations": {
+            "addons.kubernetes.vmware.com/package-metadata-name": "istio.kubernetes.vmware.com",
+            "addons.kubernetes.vmware.com/package-name": "istio.kubernetes.vmware.com.1.28.2+vmware.1-vks.1",
+            "packaging.carvel.dev/package-repository-ref": "vmware-system-vks-public/standard-packages"
+        },
+        "ownerReferences": [
+            {
+                "apiVersion": "data.packaging.carvel.dev/v1alpha1",
+                "kind": "Package",
+                "name": "istio.kubernetes.vmware.com.1.28.2+vmware.1-vks.1",
+                "uid": "334ba3ce-f176-440b-9003-ef68c033a92e"
+            }
+        ],
+        "managedFields": [
+            {
+                "manager": "manager",
+                "operation": "Update",
+                "apiVersion": "addons.kubernetes.vmware.com/v1alpha1",
+                "time": "2026-03-26T23:27:32Z",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:metadata": {
+                        "f:annotations": {
+                            ".": {},
+                            "f:addons.kubernetes.vmware.com/package-metadata-name": {},
+                            "f:addons.kubernetes.vmware.com/package-name": {},
+                            "f:packaging.carvel.dev/package-repository-ref": {}
+                        },
+                        "f:labels": {
+                            ".": {},
+                            "f:addon.kubernetes.vmware.com/addon-name": {},
+                            "f:addon.kubernetes.vmware.com/addon-namespace": {}
+                        },
+                        "f:ownerReferences": {
+                            ".": {},
+                            "k:{\"uid\":\"334ba3ce-f176-440b-9003-ef68c033a92e\"}": {}
+                        }
+                    },
+                    "f:spec": {
+                        ".": {},
+                        "f:addonConfigDefinitionRef": {
+                            ".": {},
+                            "f:name": {},
+                            "f:namespace": {}
+                        },
+                        "f:addonRef": {
+                            ".": {},
+                            "f:name": {}
+                        },
+                        "f:package": {
+                            ".": {},
+                            "f:refName": {},
+                            "f:version": {}
+                        },
+                        "f:sourceVersionConstraints": {},
+                        "f:version": {}
+                    }
+                }
+            }
+        ]
+    },
+    "spec": {
+        "addonRef": {
+            "name": "istio"
+        },
+        "version": "1.28.2+vmware.1-vks.1",
+        "package": {
+            "refName": "istio.kubernetes.vmware.com",
+            "version": "1.28.2+vmware.1-vks.1"
+        },
+        "addonConfigDefinitionRef": {
+            "name": "istio.kubernetes.vmware.com.1.28.2---vmware.1-vks.1",
+            "namespace": "vmware-system-vks-public"
+        },
+        "sourceVersionConstraints": "\u003e=1.26.0"
+    }
+}
