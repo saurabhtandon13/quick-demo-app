@@ -25,7 +25,7 @@ resources:
  - paymentservice.yaml
  - productcatalogservice.yaml
  - recommendationservice.yaml
- - shippingservicoe.yaml
+ - shippingservice.yaml
  - istio-gateway-https.yaml
 
 namespace: webapps
