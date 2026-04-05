@@ -1,0 +1,69 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: shoppingapp-selfsigned-issuer
+  namespace: webapps
+  labels:
+    app: shoppingapp
+spec:
+  selfSigned: {}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: shoppingapp-selfsigned-cert
+  namespace: webapps
+  labels:
+    app: shoppingapp
+spec:
+  isCA: true
+  commonName: shoppingapp.lvnlab.internal
+  secretName: shoppingapp-server-tls
+  dnsNames:
+    - shoppingapp.lvnlab.internal
+  duration: 8760h
+  renewBefore: 240h
+  privateKey:
+    rotationPolicy: Always
+    algorithm: ECDSA
+    size: 256
+  issuerRef:
+    name: shoppingapp-selfsigned-issuer
+    kind: Issuer
+    group: cert-manager.io
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: shoppingapp-gateway
+  namespace: webapps
+spec:
+  gatewayClassName: istio
+  listeners:
+  - name: https
+    protocol: HTTPS
+    port: 443
+    hostname: shoppingapp.lvnlab.internal
+    tls:
+      mode: Terminate
+      certificateRefs:
+      - name: shoppingapp-server-tls
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: shoppingapp-route
+  namespace: webapps
+spec:
+  parentRefs:
+  - name: shoppingapp-gateway
+  hostnames:
+  - shoppingapp.lvnlab.internal
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: frontend-external
+      port: 80
