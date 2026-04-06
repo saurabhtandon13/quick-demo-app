@@ -19,6 +19,7 @@ metadata:
   labels:
     app: frontend
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: frontend
@@ -29,7 +30,6 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      replicas: 1
       serviceAccountName: frontend
       securityContext:
         fsGroup: 1000
