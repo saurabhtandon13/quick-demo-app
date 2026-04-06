@@ -29,6 +29,7 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
+      replicas: 1
       serviceAccountName: frontend
       securityContext:
         fsGroup: 1000
@@ -37,7 +38,6 @@ spec:
         runAsUser: 1000
       containers:
         - name: server
-          replicas: 1
           securityContext:
             allowPrivilegeEscalation: false
             capabilities:
