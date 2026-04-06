@@ -19,6 +19,7 @@ metadata:
   labels:
     app: cartservice
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: cartservice
@@ -93,6 +94,7 @@ metadata:
   labels:
     app: redis-cart
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: redis-cart
