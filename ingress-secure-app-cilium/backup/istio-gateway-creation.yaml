@@ -1,0 +1,50 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: cloudapps-selfsigned-issuer
+  namespace: istio-system
+  labels:
+    app: cloudapps
+spec:
+  selfSigned: {}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cloudapps-selfsigned-cert
+  namespace: istio-system
+  labels:
+    app: cloudapps
+spec:
+  isCA: true
+  commonName: "*.cloudapps.lvnlab.internal"
+  secretName: cloudapps-server-tls
+  dnsNames:
+    - "*.cloudapps.lvnlab.internal"
+  duration: 8760h
+  renewBefore: 240h
+  privateKey:
+    rotationPolicy: Always
+    algorithm: ECDSA
+    size: 256
+  issuerRef:
+    name: cloudapps-selfsigned-issuer
+    kind: Issuer
+    group: cert-manager.io
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: cloudapps-gateway
+  namespace: istio-system
+spec:
+  gatewayClassName: istio
+  listeners:
+  - name: https
+    protocol: HTTPS
+    port: 443
+    hostname: "*.cloudapps.lvnlab.internal"
+    tls:
+      mode: Terminate
+      certificateRefs:
+      - name: cloudapps-server-tls
