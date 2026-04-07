@@ -7,12 +7,12 @@ spec:
   parentRefs:
   - name: cloudapps-gateway
   hostnames:
-  - "*.cloudapps.lvnlab.internal"
+  - shoppingapp.cloudapps.lvnlab.internal
   rules:
   - matches:
     - path:
         type: PathPrefix
         value: /
     backendRefs:
-    - name: frontend-external
+    - name: frontend-external.webapps.svc.cluster.local
       port: 80

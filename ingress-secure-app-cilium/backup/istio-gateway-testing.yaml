@@ -17,10 +17,10 @@ metadata:
     app: cloudapps
 spec:
   isCA: true
-  commonName: shoppingapp.cloudapps.lvnlab.internal
+  commonName: shoppingapp.lvnlab.internal
   secretName: cloudapps-server-tls
   dnsNames:
-    - shoppingapp.cloudapps.lvnlab.internal
+    - shoppingapp.lvnlab.internal
   duration: 8760h
   renewBefore: 240h
   privateKey:
@@ -43,8 +43,27 @@ spec:
   - name: https
     protocol: HTTPS
     port: 443
-    hostname: shoppingapp.cloudapps.lvnlab.internal
+    hostname: shoppingapp.lvnlab.internal
     tls:
       mode: Terminate
       certificateRefs:
       - name: cloudapps-server-tls
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: shoppingapp-route
+  namespace: webapps
+spec:
+  parentRefs:
+  - name: cloudapps-gateway
+  hostnames:
+  - shoppingapp.lvnlab.internal
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: frontend-external
+      port: 80

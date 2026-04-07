@@ -2,7 +2,7 @@ apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: cloudapps-selfsigned-issuer
-  namespace: istio-system
+  namespace: webapps
   labels:
     app: cloudapps
 spec:
@@ -12,15 +12,15 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: cloudapps-selfsigned-cert
-  namespace: istio-system
+  namespace: webapps
   labels:
     app: cloudapps
 spec:
   isCA: true
-  commonName: "*.cloudapps.lvnlab.internal"
+  commonName: shoppingapp.lvnlab.internal
   secretName: cloudapps-server-tls
   dnsNames:
-    - "*.cloudapps.lvnlab.internal"
+    - shoppingapp.lvnlab.internal
   duration: 8760h
   renewBefore: 240h
   privateKey:
@@ -36,14 +36,14 @@ apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:
   name: cloudapps-gateway
-  namespace: istio-system
+  namespace: webapps
 spec:
   gatewayClassName: istio
   listeners:
   - name: https
     protocol: HTTPS
     port: 443
-    hostname: "*.cloudapps.lvnlab.internal"
+    hostname: shoppingapp.lvnlab.internal
     tls:
       mode: Terminate
       certificateRefs:
@@ -58,7 +58,7 @@ spec:
   parentRefs:
   - name: cloudapps-gateway
   hostnames:
-  - "*.cloudapps.lvnlab.internal"
+  - shoppingapp.lvnlab.internal
   rules:
   - matches:
     - path:
