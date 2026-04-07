@@ -7,7 +7,7 @@ spec:
   parentRefs:
   - name: cloudapps-gateway
   hostnames:
-  - *.cloudapps.lvnlab.internal
+  - "*.cloudapps.lvnlab.internal"
   rules:
   - matches:
     - path:
