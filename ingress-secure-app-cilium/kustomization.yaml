@@ -26,6 +26,6 @@ resources:
  - productcatalogservice.yaml
  - recommendationservice.yaml
  - shippingservice.yaml
- - istio-gateway-testing.yaml
+ - gatewaycreation.yaml
 
-namespace: webapps
+
